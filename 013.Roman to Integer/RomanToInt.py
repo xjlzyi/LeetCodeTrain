@@ -7,6 +7,7 @@
 # C             100
 # D             500
 # M             1000
+
 class Solution:
     def romanToInt(self, s):
         """
