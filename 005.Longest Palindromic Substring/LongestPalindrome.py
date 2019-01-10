@@ -20,11 +20,12 @@ class Solution:
             return s
         res = ''
         for i in range(len(s)):
+            # check type 'aba'
             tmp = self.expandAroundCenter(s, i, i)
             if len(tmp) > len(res):
                 res = tmp
-            
-            tmp = self.expandAroundCenter(s, i, i+1)
+            # check type 'abba'
+            tmp = self.expandAroundCenter(s, i, i + 1)
             if len(tmp) > len(res):
                 res = tmp
         return res
@@ -34,5 +35,3 @@ class Solution:
             l -= 1
             r += 1
         return s[l+1:r]
-            
->>>>>>> 14f88ccfe0c5454f67b60f2f6eac4a75af172630
