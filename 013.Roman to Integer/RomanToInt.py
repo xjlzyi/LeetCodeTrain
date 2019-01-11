@@ -34,7 +34,7 @@ def main():
         try:
             s = next(lines)
             ret = Solution().romanToInt(s.upper())
-            out = str(ret);
+            out = str(ret)
             print(out)
         except StopIteration:
             break

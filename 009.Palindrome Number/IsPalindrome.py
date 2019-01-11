@@ -34,11 +34,11 @@ def main():
     while True:
         try:
             line = next(lines)
-            x = int(line);
+            x = int(line)
             
             ret = Solution().isPalindrome(x)
 
-            out = (ret);
+            out = ret
             print(out)
         except StopIteration:
             break
